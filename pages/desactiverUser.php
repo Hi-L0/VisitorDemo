@@ -1,0 +1,22 @@
+<!--disableUser-->
+<?php
+session_start();
+if(isset($_SESSION['user'])){
+require_once('connectiondb.php');
+$idUser=isset($_GET['idUser'])?$_GET['idUser']:0;
+$etat=isset($_GET['etat'])?$_GET['etat']:0;
+if($etat==1){
+    $newEtat=0;
+}else{
+    $newEtat=1;
+}
+$rq="update utilisateur set etat=?  where ID_User=?";
+$params=array($newEtat,$idUser);
+$result=$pdo->prepare($rq);
+$result->execute($params);
+header('location:admin-panel(users).php');
+}
+else{
+    header('location:registration.php');
+}
+?>

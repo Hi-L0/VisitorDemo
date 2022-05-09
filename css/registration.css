@@ -1,0 +1,28 @@
+/*registration.css*/
+body{
+    background: #DCDDDF url(https://cssdeck.com/uploads/media/items/7/7AF2Qzt.png);
+}
+.margintop{
+    margin-top:100px;
+}
+.card{
+    margin: auto;
+    width:500px ;
+    border-radius: 10px;
+}
+table {
+    position: relative;
+    margin-top: 10px;
+    border-spacing: 0px;
+    border-radius: 50px;
+    background-color: white;
+    /*border:2px solid blue;*/
+    /* width: 50px; */
+    margin: auto;
+    /* box-shadow: 2px 4px 4px black; */
+    border-collapse: collapse;
+}
+tr{
+    height:30px;
+    padding-left: 50px;
+}
