@@ -1,5 +1,5 @@
 # VisitorDemo
-App for booking appointements to DFP
+App for booking appointements to DFP not really appointement is just visits and the purpose of it
 
 
 
